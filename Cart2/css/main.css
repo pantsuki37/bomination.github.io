@@ -1,0 +1,502 @@
+@charset "utf-8";
+/* CSS Document */
+/*menureponsive*/
+body
+{
+	margin: 0;
+	padding: 0;
+}
+cachchu { letter-spacing: 2px}
+.topnav {
+  overflow: hidden;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topnav a:hover {
+  text-decoration: none;
+  color:#C0C0C0;
+}
+
+.active {
+  
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+	
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a
+	{
+    float: none;
+    display: block;
+    text-align: left;
+	}
+	}
+
+/*parallax*/
+
+.parallax {
+  /* The image used */
+  background-image: url(../img/bgmain.jpg) ;
+	
+
+  /* Set a specific height */
+  height:1080px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;}
+/*menuvuong*/
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 3;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    3;
+   -moz-column-gap:      0px;
+   column-count:         3;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/*overlaytitle*/
+* {box-sizing: border-box;}
+
+.container-overlay {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-overlay {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.overlay-title {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+	height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+	vertical-align: 30%;
+	
+}
+
+.container-overlay:hover .overlay-title {
+  opacity: 1;
+}
+/*bgcolor*/
+/*footer*/
+cachdong
+{
+	line-height: 150%;
+}
+.col-lg-4 a
+{
+	opacity: 0.8;
+}
+
+.col-lg-4 a:hover 
+{
+	opacity: 1;
+	
+}
+/*shop*/
+.sidebar {
+  margin-left: -40px;
+  padding: 0px;
+  width: 300px;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+	text-decoration: none;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar {
+    width: auto;
+    height: auto;
+    position: relative;
+	margin: auto;
+  }
+  .sidebar a {float: none; text-align: center;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 374px) {
+  .sidebar a {
+    text-align: center;
+    float: left;
+  }
+}
+
+
+.pic
+{
+	position: relative;
+	margin: 0 30px 0 0;
+}
+.pic a
+{
+	color: black;
+}
+.pic:hover a
+{
+	color:#FFFFFF;
+	background-color: #636363;
+	text-decoration: none;
+}
+.pagearrow
+{
+	position: relative;
+	width: 200px;
+	padding: 10px;
+	margin: auto;
+	font-size: 24px;
+	font-weight: bold;
+	float: right;
+}
+.shop-loc
+{
+	background-color: #FFFFFF;
+	margin-top: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+/*cart*/
+.product-image {
+  float: left;
+  width: 20%;
+}
+ 
+.product-details {
+  float: left;
+  width: 37%;
+}
+ 
+.product-price {
+  float: left;
+  width: 12%;
+}
+ 
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+ 
+.product-removal {
+  float: left;
+  width: 9%;
+}
+ 
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+ 
+/* This is used as the traditional .clearfix class */
+.group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: '';
+  display: table;
+}
+ 
+.group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+  clear: both;
+}
+ 
+.group, .shopping-cart, .column-labels, .product, .totals-item {
+  zoom: 1;
+}
+ 
+/* Apply clearfix in a few places */
+/* Apply dollar signs */
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: '$';
+}
+ 
+/* Body/Header stuff */
+body {
+  padding: 0px 30px 30px 20px;
+  font-family: "TUV Montserrat";
+  font-weight: 100;
+}
+ 
+h1 {
+  font-weight: 100;
+}
+ 
+label {
+  color: #aaa;
+}
+ 
+.shopping-cart {
+  margin-top: -45px;
+}
+ 
+/* Column headers */
+.column-labels label {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+  text-indent: -9999px;
+}
+ 
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.product .product-image {
+  text-align: center;
+}
+.product .product-image img {
+  width: 100px;
+}
+.product .product-details .product-title {
+  margin-right: 20px;
+  
+}
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+.product .product-quantity input {
+  width: 40px;
+}
+.product .remove-product {
+ border-style: solid ;
+	border-width: 1px;
+  padding: 4px 8px;
+  background-color: #fff;
+  color: #000;
+  font-family: "TUV Montserrat", "TUV Montserrat";
+  font-size: 12px;
+  border-radius: 0px;
+}
+.product .remove-product:hover {
+  background-color: #1A1A1A;
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}
+ 
+/* Totals section */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+.totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+.totals .totals-item-total {
+  font-family: "TUV Montserrat", "TUV Montserrat";
+}
+ 
+.checkout {
+  
+  background-color: #fff;
+  border-style: solid;
+  color: #171717;
+  padding: 15px 32px;
+  float: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+	
+  cursor: pointer;
+}
+ 
+.checkout:hover {
+  background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+ 
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+ 
+  .column-labels {
+    display: none;
+  }
+ 
+  .product-image {
+    float: right;
+    width: auto;
+  }
+  .product-image img {
+    margin: 0 0 10px 10px;
+  }
+ 
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+ 
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+ 
+  .product-quantity {
+    width: 100px;
+  }
+  .product-quantity input {
+    margin-left: 20px;
+  }
+ 
+  .product-quantity:before {
+    content: 'x';
+  }
+ 
+  .product-removal {
+    width: auto;
+  }
+ 
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+}
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+ 
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+ 
+  .product .product-line-price:before {
+    content: 'Item Total: $';
+  }
+ 
+  .totals .totals-item label {
+    width: 60%;
+  }
+  .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}
+
+/*animate*/
+.wow:first-child {
+      visibility: hidden;
+    }
